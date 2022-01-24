@@ -3,6 +3,7 @@ import PublicPage from "./routes/PublicPage";
 import ProtectedPage from "./routes/ProtectedPage";
 import Login from "./routes/Login";
 import Layout from "./components/Layout";
+import "./App.css";
 
 import { AuthProvider, RequireAuth } from "./context/auth-context";
 

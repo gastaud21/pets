@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 // import { renderMatches } from "react-router-dom";
 import { listPets, createPet } from "../services/pets";
+import "./ProtectedPage.css";
 
 function ProtectedPage() {
   useEffect(() => {
