@@ -1,4 +1,5 @@
 import client from "../providers/client";
+export const apiCode = process.env.REACT_APP_API_CODE;
 
-export const listPets = () =>
-  client("pets/0rp4knn/a398510e-0800-47c2-94c1-29c990ac2bb7");
+export const listPets = () => client(`pets/${apiCode}`);
+export const createPet = (data) => client.post(`pets/${apiCode}`, data);
